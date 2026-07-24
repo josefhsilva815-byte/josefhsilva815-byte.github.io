@@ -5,7 +5,8 @@
     --destaque:         #2563EB;
     --hover:            #3B82F6;
     --texto-secundario: #94A3B8;
-    --texto-principal:            #F8FAFC;
+    --texto-principal:  #F8FAFC;
+
 
     /* Fontes */
     --titulo: "Poppins";
@@ -15,26 +16,27 @@
     /* Números: */
     --headerHeight: 220px;
     --footerHeight: 80px;
-    --mainHeight: calc(100% - (var(--headerHeight) + var(--footerHeight)));
+    --mainHeight: calc(-(var(--headerHeight) + var(--footerHeight)) + 100%);
 }
 
-.bg-padrao {background-color: var(--background) !important;}
-.bg-cards { background-color: var(--cards) !important;}
-.bg-destaque {background-color: var(--destaque) !important;}
-.hover:hover { background-color: var(--hover) !important;}
-.texto-secundario {color: var(--texto-secundario) !important;}
-.texto-principal {color: var(--texto-principal) !important;}
+.bg-padrao        { background-color: var(--background) !important; }
+.bg-cards         { background-color: var(--cards) !important;      }
+.bg-destaque      { background-color: var(--destaque) !important;   }
+.hover:hover      { background-color: var(--hover) !important;      }
+.texto-secundario { color: var(--texto-secundario) !important;      }
+.texto-principal  { color: var(--texto-principal) !important;       }
 
-.h-nav {height: var(--headerHeight) !important;}
-.h-img {width: var(--headerHeight) !important;}
+.h-nav            { height: var(--headerHeight) !important;         }
+.h-img            { width: var(--headerHeight) !important;          }
+.h-body           { height: 100vh;                                  }
+.h-main           { height: var(--mainHeight);                      }
+.h-footer         { height: var(--footerHeight) !important;         }
+.min-h            { min-height: fit-content;                        }
 
+.bd-color         { border-color:var(--texto-secundario) !important;}
 
-.h-main {
-    height: var(--mainHeight) !important;
-    min-height: fit-content !important;
-}
+.titulo           { font-family: var(--titulo) !important;          }
+.textos           { font-family: var(--textos) !important;          }
 
-.h-footer {height: var(--footerHeight) !important;}
-
-.titulo {font-family: var(--titulo) !important;}
-.textos {font-family: var(--textos) !important;}
+.link             { text-decoration: none !important;               }
+.status           { min-width: 80px !important;                     }
